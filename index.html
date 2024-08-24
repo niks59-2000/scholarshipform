@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- form-wrap start -->
+    <div class="form-wrap">
+    
+        <h1>ABC University</h1>
+        <h2>Scholarship Application Form</h2>
+    <!-- form start -->
+    <form autocomplete="off">
+        <div class="form-group">
+            <label for="studentname">Student Name</label>
+            <input type="text" id="studentname" name="firstname" placeholder="First Name" required>
+            <input type="text" id="studentname" name="lastname" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="DateofBirth" placeholder="MM/DD/YYYY" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="radio" id="gender" name="Gender" value="Male" >Male
+            <input type="radio" id="gender" name="Gender" value="Female">Female
+            <input type="radio" id="gender" name="Gender" value="Others">Others
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="Address1" placeholder="Address" required>
+            <input type="text" id="address" name="Address2" placeholder="Address Line 2"><br>
+            <input type="text" id="address" name="city" placeholder="City">
+            <input type="text" id="address" name="postal" placeholder="Postal Code">
+        <select name="states">
+            <option value="choose" enabled>Select your State</option>
+            <option value="Andhrapradesh">Andhra Pradesh</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="Tamilnadu">Tamil Nadu</option>
+        </select>
+        <select name="country">
+            <option value="choose" enabled>Select your Country</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="japan">Japan</option>
+            <option value="malaysia">Malaysia</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="citizen">Citizenship</label>
+        <input type="text" id="citizen" name="Citizen" required>
+    </div>
+    <div class="form-group">
+        <label for="status">What is your current status study?</label>
+        <input type="text" id="status" name="Status" required>
+    </div>
+    <div class="form-group">
+        <label for="faculty">What faculty/school do you intend to join?</label>
+        <input type="text" id="faculty" name="Faculty" required>
+    </div>
+    <div class="form-group">
+        <p>Reference name and full contact details: (optional)</p>
+        <label for="ref_name">Reference Name</label>
+        <input type="text" id="ref_name" name="referencename">
+    </div>
+    <div class="form-group">
+        <label for="contact">Contact email address or phone number:</label>
+        <input type="text" id="contact" name="Contact">
+    </div>
+    <div class="form-group">
+        <label for="file">You can attach documents related to your application.</label>
+        <input type="file" name="files" id="files" multiple>
+    </div>
+    <!-- <div class="form-group">
+        <textarea name="message" rows="10" cols="50">
+
+       </textarea>
+    </div> -->
+    <div class="form-group">
+       <button type="submit" class="submit">Submit</button>
+    </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
+
+

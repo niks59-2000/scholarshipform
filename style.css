@@ -1,0 +1,97 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    line-height:1.5;
+}
+.container{
+    padding:20px;
+    /* background-color:lightgrey; */
+    max-width:600px;
+    margin:auto;
+    background-color:#0a2351;
+    color:white;
+    display:flex;
+    flex-flow:column wrap;
+}
+.container h1{
+    text-align:center;
+    font-size:2rem;
+}
+.container h2{
+    text-align:center;
+    font-size:1.25rem;
+    margin-top:-10px;
+}
+.form-wrap .form-group{
+    padding:10px;
+    font-size:17px;
+    /* margin-bottom:10px; */
+}
+.form-wrap .form-group label{
+    display:block;
+    color:lightgrey;
+    margin-bottom:10px;
+    font-size:18px;
+}
+.form-wrap .form-group label,.form-wrap .form-group p{
+    font-weight:bold;
+}
+.form-wrap .form-group input,.form-wrap .form-group select{
+    margin-bottom:10px;
+}
+.form-wrap .form-group input[type="text"],
+.form-wrap .form-group select,
+.form-wrap .form-group input[type="date"],
+.form-wrap .form-group input[type="email"],
+.form-wrap .form-group input[type="file"]
+{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    /* margin-bottom:10px; */
+    border:none;
+    font-family:inherit;
+    font-size:inherit;
+}
+.form-wrap .form-group input[type="radio"]{
+    padding:10px;
+    font-family:inherit;
+    font-size:inherit;
+}
+.form-wrap .form-group #file{
+    width:50%;
+    font-size:inherit;
+    font-family:inherit;
+    padding:20px;
+    background-color:grey;
+}
+.form-wrap .form-group .submit{
+    padding:10px;
+    text-align:center;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    border:none;
+    background:#228B22;
+    width:100%;
+    display:block;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+.form-wrap .form-group .submit:hover{
+    background:green;
+}
+
+@media (max-width:500px){
+    body{
+        background:none;
+    }
+    .container{
+        margin:0 auto;
+    }
+}
+
